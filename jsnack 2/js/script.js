@@ -12,7 +12,18 @@ var arrayObj = [
 console.log(arrayObj);
 
 // nuovo array in cui inserire la nuova proprietà degli oggetti
-var arrayObjCopia = arrayObj.slice();
+var arrayObjCopia = [];
+
+// ciclo for per ciclare l'array di partenza
+for (var i = 0; i < arrayObj.length; i++) {
+
+  arrayObjCopia.push({});
+
+  for (var key in arrayObj[i]) {
+    arrayObjCopia[i][key] = arrayObj[i][key];
+  }
+
+}
 
 // ciclo for per ciclare il nuovo array e per aggiungere ai suoi oggetti la nuova proprietà
 for (var i = 0; i < arrayObjCopia.length; i++) {
