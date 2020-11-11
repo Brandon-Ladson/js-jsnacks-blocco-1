@@ -9,8 +9,10 @@ var arrayObj = [
   {name: 'Jenny', type: 'borsa', color: 'pink'},
 ];
 
+console.log(arrayObj);
+
 // nuovo array in cui inserire la nuova proprietà degli oggetti
-var arrayObjCopia = arrayObj;
+var arrayObjCopia = arrayObj.slice();
 
 // ciclo for per ciclare il nuovo array e per aggiungere ai suoi oggetti la nuova proprietà
 for (var i = 0; i < arrayObjCopia.length; i++) {
